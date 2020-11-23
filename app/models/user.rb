@@ -3,4 +3,17 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+
+         has_many :tweets
+         has_many :comments
+
+         extend ActiveHash::Associations::ActiveRecordExtensions
+         belongs_to :gender
+
+         with_options presence: true do
+          validates :nickname
+          validates :password, format:  { with: /\A[a-zA-Z0-9]+\z/ }
+          validates :gender_id, numericality:   { other_than: 1 }
+          validates :profile
+        end
 end
