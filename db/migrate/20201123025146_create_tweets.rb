@@ -4,6 +4,7 @@ class CreateTweets < ActiveRecord::Migration[6.0]
       t.text :text,             null: false
       t.integer :category_id,   null: false
       t.references :user,       foreign_key: true
+      t.timestamps
     end
   end
 end

@@ -23,5 +23,4 @@ class TweetsController < ApplicationController
     params.require(:tweet).permit(:text, :category_id).merge(user_id: current_user.id)
   end
 
-
 end

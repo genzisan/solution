@@ -26,6 +26,8 @@ ActiveRecord::Schema.define(version: 2020_11_23_025354) do
     t.text "text", null: false
     t.integer "category_id", null: false
     t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_tweets_on_user_id"
   end
 
