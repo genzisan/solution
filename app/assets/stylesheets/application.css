@@ -13,3 +13,300 @@
  *= require_tree .
  *= require_self
  */
+
+ /* リセットCSS */
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ヘッダー */
+
+.header {
+  background-color: #f1f8fe;
+  padding: 20px 0;
+  width: 100%;
+}
+.inner {
+  width: 1024px;
+  margin: 0 auto;
+}
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  width: 200px;
+}
+.nav__btn{
+  display: inline-block;
+  padding: 7px 15px;
+  font-size: 20px;
+  color: #87CEFA;
+  text-decoration: none;
+  user-select: none;
+  border: 2px #87CEFA solid;
+  border-radius: 5px;
+  transition: 0.4s ease;
+  margin-left: 10px;
+}
+.nav__btn:hover{
+  color: #fff;
+  background: #87CEFA;
+}
+
+.nav__logout{
+  display: inline-block;
+  padding: 7px 15px;
+  font-size: 20px;
+  color: #87CEFA;
+  text-decoration: none;
+  user-select: none;
+  border: 2px #87CEFA solid;
+  border-radius: 5px;
+  transition: 0.4s ease;
+  margin-left: 10px;
+}
+.nav__logout:hover{
+  background: #87CEFA;
+  color: #fff;
+}
+
+.user-nickname {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/* フッター */
+
+.footer {
+  background-color: #999;
+  padding: 10px 0;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+.copyright {
+  text-align: center;
+  color: #fff;
+  font-size: 10px;
+}
+
+/* アプリケーションファイル */
+
+body,html {
+  min-height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  position: relative;
+  min-height: 100vh;
+}
+
+
+/* index */
+
+.index-second-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.btn1 {
+  display: block;
+  margin: 0 30px ;
+  height: 30vh;
+}
+
+/* new */
+
+.new-logo {
+  padding: 20px;
+}
+
+
+.new_wrapper {
+  text-align: center;
+  background-color: rgb(207, 242, 255);
+  min-height: 100vh;
+}
+
+.new-second-wrapper {
+  background-color: rgb(248, 227, 230);
+  margin: 0 20%;
+  height: 65vh;
+  position: relative;
+  justify-content: center;
+}
+
+.question-text {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.question-text {
+  margin-top: 30px;
+}
+
+.items-text {
+  width: 80%;
+  padding: 16px 16px 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  resize: none;
+}
+
+.solution-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: pink;
+  padding-top: 30px;
+}
+
+.sell-btn-contents {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.sell-btn {
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+  width: 15%;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-btn-main {
+  margin-top: 40px;  
+}
+
+.back-btn {
+  background: #aaa;
+  border: 1px solid #aaa;
+  color: #fff;
+  padding: 15px 5%;
+  text-decoration: none;
+  
+}
+
+
+/* 共通必須 */
+.new-mendatory {
+  background: #ea352d;
+  margin-left: 8px;
+  padding: 3px;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+
+
+/* フォーム周り */
+.form__wrapper{
+  min-height: calc(100vh - 161px);
+  overflow: scroll;
+}
+
+
+.form__text {
+  width: 50%;
+  margin-top: 10px;
+  padding: 1px;
+}
+
+.field{
+  margin: 20px 0;
+}
+
+.actions{
+  margin-bottom: 40px;
+}
+
+.form__btn{
+  display: inline-block;
+  padding: 10px 1.6em;
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  background: #87CEFA;
+  border: 1px #87CEFA solid;
+  border-radius: 3px;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  transition: 0.2s ease;
+}
+
+.form__btn:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}
+
+.page-heading {
+  margin-top: 20px;
+}
+
+.test {
+  padding: 6px;
+  margin-top: 5px;
+}
+
+.select-box {
+  padding: 10px;
+  margin-top: 5px;
+}
