@@ -12,7 +12,6 @@ class User < ApplicationRecord
 
          with_options presence: true do
           validates :nickname
-          validates :password, format:  { with: /\A[a-zA-Z0-9]+\z/ }
           validates :gender_id, numericality:   { other_than: 1 }
           validates :profile
         end

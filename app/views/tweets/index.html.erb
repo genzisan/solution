@@ -1,2 +1,21 @@
-<h1>トップページ</h1>
-<%= @tweets %>
+<%= render "shared/header" %>
+<div class="wrapper">
+  <div class="index-urapper">
+    <div class="index-second-wrapper">
+      <%= link_to image_tag("ngwh6L68_400x400.jpeg", class:"btn1"), "#" %>
+      <%= link_to image_tag("ngwh6L68_400x400.jpeg", class:"btn1"), "#" %>
+      <%= link_to image_tag("ngwh6L68_400x400.jpeg", class:"btn1"), "#" %>
+      <%= link_to image_tag("ngwh6L68_400x400.jpeg", class:"btn1"), "#" %>
+    </div>
+  <div class="index-third-wrapper">
+  <%# <% @tweets.each do |item| %> %>
+  <%# <%= link_to item.text, class: "item-img", "#"  %> %>
+
+  </div>
+  </div>
+</div>
+<%= render "shared/footer" %>
+
+
+
+
