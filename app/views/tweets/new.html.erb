@@ -2,12 +2,12 @@
   
   <div class="new_wrapper">
   <div class="new-logo">
-    <%= link_to image_tag('8BFCF496-0C86-4AEB-AF0B-6032BA643D3B-removebg-preview.png' , size: '200x100'), "/" %>
+    <%= link_to image_tag('8BFCF496-0C86-4AEB-AF0B-6032BA643D3B-removebg-preview.png' , size: '250x50'), "/" %>
   </div>
     <div class="new-second-wrapper">
-      <h1 class="solution-title">悩みの情報を入力</h1>
+      
 
-      <%= form_with model: @tweet, local: true do |f| %>
+      <%= form_with model: @tweet, class: :form_wrapper, local: true do |f| %>
       <div class="question-text">
         質問or相談カテゴリー
         <span class="new-mendatory">必須</span>
@@ -18,7 +18,7 @@
         質問or相談
         <span class="new-mendatory">必須</span>
       </div>
-      <%= f.text_area :text, class:"items-text", id:"item-info", placeholder:"質問や相談をご記入ください" ,rows:"7" ,maxlength:"1000" %>
+      <%= f.text_area :text, class:"items-text", id:"item-info", placeholder:"質問や相談をご記入ください(1000文字以内)" ,rows:"7" ,maxlength:"1000" %>
       
       <div class="sell-btn-contents">
       <%= f.submit "送信" ,class:"sell-btn" %>

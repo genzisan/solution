@@ -7,18 +7,19 @@
       <%= link_to image_tag("ngwh6L68_400x400.jpeg", class:"btn1"), "#" %>
       <%= link_to image_tag("ngwh6L68_400x400.jpeg", class:"btn1"), "#" %>
     </div>
+
     <div class="post-main">
-    <h1 class="post-title">✔︎　新　着　投　稿　一　覧</h1>
+    <h1 class="post-title">ーー　新　着　投　稿　一　覧　ーー</h1>
     </div>
-    <ul class="tweet_lists">
-      <% @tweets.each do |item| %>
-        <li class="tweet_list">
-          <%= item.text %>
-          <%= ":カテゴリー名[#{item.category.name}]　" %>
-          <%= link_to item.user.nickname, tweet_path(item.id), class: :tweet_user %>
-        </li>
-      <% end %>
-    </ul>
+    
+      <ul class="tweet_lists">
+        <% @tweets.each do |text| %>
+          <li class="tweet_list">
+            <%= link_to text.text, tweet_path(text.id), class: :tweet_letter %>
+            <%= link_to "ユーザー名[#{text.user.nickname}]　 カテゴリー[#{text.category.name}]", "#", class: :tweet_user %> 
+          </li>
+        <% end %>
+      </ul>   
 </div>
 
 <%= render "shared/footer" %>
