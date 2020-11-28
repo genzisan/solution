@@ -3,11 +3,9 @@
   <div class="usermain-wrapper">
     <div class="user-main-second-wrapper">
       <div class="user-second-wrapper">
-      </div>
-      <div class="user-third-wrapper">
-        <h1 class="user-show-heading">
-        <%= "#{@user.nickname}さんの情報"%>
-        </h1>
+            <h1 class="user-show-heading">
+            <%= "#{@user.nickname}さんの情報"%>
+            </h1>
           <div class="table-boss">
             <table class="table">
               <tbody>
@@ -15,24 +13,28 @@
                   <th class="table__col1">名前</th>
                   <td class="table__col2"><%= "#{@user.nickname}" %></td>
                 </tr>
-                </tr>
-                  <th class="table__col1">プロフィール</th>
-                  <td class="table__col2"><%= @user.profile %></td>
-                </tr>
+                
                 </tr>
                   <th class="table__col1">性別</th>
                   <td class="table__col2"><%= "#{@user.gender.name}" %></td>
+                </tr>
+                </tr>
+                  <th class="table__col1">プロフィール</th>
+                  <td class="table__col2"><%= @user.profile %></td>
                 </tr>
               </tbody>
             </table>
           </div>
       </div>
+      <div class="user-third-wrapper">    
+      </div>
+    </div>
+
+    <div class="user-show-text">
+        <%= "ーー　#{@user.nickname}さんの質問or相談　ーー"%>
     </div>
 
     <div class="user-fourth-wrapper">
-      <h1 class="user-show-heading">
-        <%= "#{@user.nickname}さんの情報"%>
-      </h1>
       <ul class="tweet_lists">
         <% @tweets.each do |text| %>
           <li class="tweet_list">

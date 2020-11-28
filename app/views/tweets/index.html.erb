@@ -1,13 +1,20 @@
 <%= render "shared/header" %>
 
 <div class="index-wrapper">
-    <div class="index-second-wrapper">
-      <%= link_to image_tag("ngwh6L68_400x400.jpeg", class:"btn1"), "#" %>
-      <%= link_to image_tag("ngwh6L68_400x400.jpeg", class:"btn1"), "#" %>
-      <%= link_to image_tag("ngwh6L68_400x400.jpeg", class:"btn1"), "#" %>
-      <%= link_to image_tag("ngwh6L68_400x400.jpeg", class:"btn1"), "#" %>
-    </div>
 
+    <div class="index-second-wrapper">
+      <%= image_tag("恋愛.jpg", class:"btn1", size: '300x300')%>
+      <%= image_tag("健康.jpg", class:"btn1", size: '300x300') %>
+      <%= image_tag("人間関係.jpg", class:"btn1", size: '300x300')%>
+      <%= image_tag("その他.jpg", class:"btn1", size: '300x300') %>
+    </div>
+    <div class="text_bord">
+      <div class="btn2">恋愛</div>
+      <div class="btn2">健康</div>
+      <div class="btn2">人間関係</div>
+      <div class="btn2">その他</div>
+    </div>
+    
     <div class="post-main">
     <h1 class="post-title">ーー　新　着　投　稿　一　覧　ーー</h1>
     </div>
@@ -19,7 +26,8 @@
             <%= link_to "ユーザー名[#{text.user.nickname}]　 カテゴリー[#{text.category.name}]", "#", class: :tweet_user %> 
           </li>
         <% end %>
-      </ul>   
+      </ul>  
+       
 </div>
 
 <%= render "shared/footer" %>

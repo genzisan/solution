@@ -9,7 +9,7 @@
 
       <%= form_with model: @tweet, class: :form_wrapper, local: true do |f| %>
       <div class="question-text">
-        質問or相談カテゴリー
+        カテゴリー項目
         <span class="new-mendatory">必須</span>
       </div>
       <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"categoroy"}) %>
