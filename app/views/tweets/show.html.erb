@@ -1,3 +1,41 @@
 <%= render "shared/header" %>
+  <div class="show-main_wrapper">
+    <div class="prototype__wrapper">
+      <div class="user_nickname">
+      <%= link_to "#{@tweet.user.nickname}さん",  user_path(@tweet.user.id), class: :prototype__user %>
+      </div>
+      <div class="prototype__manage">
+        <% if user_signed_in? && current_user.id == @tweet.user_id %>
+          <%= link_to "編集する", edit_tweet_path(@tweet.id), class: :prototype_btn_second %>
+          <%= link_to "削除する", tweet_path(@tweet.id), method: :delete, class: :prototype__btn %>
+        <% end %>
+      </div>
+      <div class="show-text">
+        <%= "#{@tweet.text}"%>
+      </div>
 
+      <div class="prototype__comments">
+        <% if current_user %>
+          <%= form_with(model: [@tweet, @comment], local: true) do |f|%>
+            <div class="show-field">
+              <%= f.label :text, "コメント記入欄", class: :comment_text %><br />
+              <%= f.text_field :text, class: :comment_box %>
+            </div>
+            <div class="actions">
+               <%= f.submit "送信する", class: :comment__btn  %>
+            </div>
+
+          <% end %>
+        <% end %>
+        <ul class="comments_lists">
+          <% @comments.each do |comment| %>
+            <li class="comments_list">
+              <%= comment.text  %>
+              <%= link_to comment.user.nickname, user_path(comment.user.id), class: :comment_user %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
 <%= render "shared/footer" %>
