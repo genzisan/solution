@@ -1,0 +1,15 @@
+ja:
+  activerecord:
+    models:
+      user: ユーザー
+      tweet: ツイート
+    attributes:
+      user:
+        nickname: 名前
+        email: メールアドレス
+        profile: プロフィール
+        gender_id: 性別
+        password: パスワード
+      tweet:
+        text: テキスト
+        category_id: カテゴリー
