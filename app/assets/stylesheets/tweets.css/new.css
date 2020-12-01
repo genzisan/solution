@@ -1,0 +1,83 @@
+/* new */
+
+.new-logo {
+  padding: 3vh;
+}
+
+.new_logo_image {
+  width: 20vw;
+  height: 10vh;
+}
+
+
+.new_wrapper {
+  text-align: center;
+  padding-top: 92px;
+  height: 100vh;
+}
+
+.new-second-wrapper {
+  margin: 20px 20%;
+  justify-content: center;
+}
+
+.question-text {
+  font-weight: bold;
+  font-size: 2.5vw;
+  padding: 2vh;
+}
+
+
+.items-text {
+  width: 80%;
+  padding: 16px 16px 8px;
+  border-radius: 4px;
+  font-size: 20px;
+  resize: none;
+}
+
+.solution-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: pink;
+  padding-top: 30px;
+}
+
+.sell-btn-contents {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.sell-btn {
+  background: #ea352d;
+  border: 1px solid #ea352d;
+  color: #fff;
+  width: 15%;
+  height: 50px;
+  font-size: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sell-btn:hover {
+  opacity: 0.7;
+}
+
+.back-btn-main {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.back-btn {
+  background: #aaa;
+  border: 1px solid #aaa;
+  color: #fff;
+  padding: 15px 5%;
+  text-decoration: none;
+}
+
+.back-btn:hover {
+  opacity: 0.7;
+}
