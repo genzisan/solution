@@ -248,26 +248,26 @@ table {
 
   /* index */
 
-  .post-title {
+.post-title {
     font-size: 20px;
-  }
+}
 
-  .btn_one {
+.btn_one {
     display: block;
     border-radius: 12px;
     box-shadow: 15px 10px 15px -10px gray;
     width: 85px;
     height: 85px;
-  }
+}
 
-  .tweet_lists {
+.tweet_lists {
     width: 90%;
     overflow: scroll;
     font-size: 20px;
     height: 55vh;
     margin: 0 auto;
     padding-left: 20px;
-    }
+}
 
 .btn_two {
   display: block;
@@ -349,7 +349,6 @@ table {
   font-size: 20px;
   margin-top: 20px;
   border-radius: 5px;
-  cursor: pointer;
 }
 
 .prototype__btn {
@@ -442,7 +441,7 @@ table {
   justify-content: center;
   }
 
-  .btn3 {
+.btn3 {
     display: block;
     border-radius: 12px;
     box-shadow: 15px 10px 15px -10px gray;
@@ -450,7 +449,7 @@ table {
     height: 100px;
     margin-left: 14%;
     margin-top: 20px;
-  }
+}
 
 
 }
