@@ -12,7 +12,7 @@ class User < ApplicationRecord
 
          with_options presence: true do
           validates :nickname
-          validates :gender_id, numericality:   { other_than: 1 }
+          validates :gender_id, numericality: { other_than: 1 }
           validates :profile
         end
 end
