@@ -1,32 +1,41 @@
 <%= render "shared/header" %>
   
   <div class="new_wrapper">
-  <div class="new-logo">
-    <%= link_to image_tag('8BFCF496-0C86-4AEB-AF0B-6032BA643D3B-removebg-preview.png' , size: '250x50'), "/" %>
-  </div>
+
+    
+
     <div class="new-second-wrapper">
-      
 
+    <div class="new-logo">
+      <%= link_to image_tag('8BFCF496-0C86-4AEB-AF0B-6032BA643D3B-removebg-preview.png' , size: '250x100',class: :new_logo_image), "/" %>
+    </div>
+      
       <%= form_with model: @tweet, class: :form_wrapper, local: true do |f| %>
-      <div class="question-text">
-        カテゴリー項目
-        <span class="new-mendatory">必須</span>
-      </div>
-      <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"categoroy"}) %>
 
-      <div class="question-text">
-        質問or相談
-        <span class="new-mendatory">必須</span>
-      </div>
-      <%= f.text_area :text, class:"items-text", id:"item-info", placeholder:"質問や相談をご記入ください(1000文字以内)" ,rows:"7" ,maxlength:"1000" %>
-      
-      <div class="sell-btn-contents">
-      <%= f.submit "送信" ,class:"sell-btn" %>
-      </div>
+         <%= render 'shared/error_messages', model: f.object  %>
+        
+        <div class="question-text">
+          カテゴリー項目
+          <span class="new-mendatory">必須</span>
+        </div>
 
-      <div class="back-btn-main">
-      <%=link_to 'もどる', root_path, class:"back-btn" %>
-      </div>
+        <%= f.collection_select(:category_id, Category.all, :id, :name, {}, {class:"select-box", id:"categoroy"}) %>
+
+        <div class="question-text">
+          質問or相談
+          <span class="new-mendatory">必須</span>
+        </div>
+
+        <%= f.text_area :text, class:"items-text", id:"item-info", placeholder:"質問や相談をご記入ください(1000文字以内)" ,rows:"7" ,maxlength:"1000" %>
+        
+        <div class="sell-btn-contents">
+        <%= f.submit "送信" ,class:"sell-btn" %>
+        </div>
+
+        <div class="back-btn-main">
+        <%=link_to 'もどる', root_path, class:"back-btn" %>
+        </div>
+
       <% end %>
 
     </div>

@@ -5,20 +5,21 @@
       <h2 class="page-heading">ユーザーログイン</h2>
       
         <%= form_with model: @user, url: user_session_path, local: true do |f| %>
-
-        <div class="field">
+        
+        <div class="field_main">
           <%= f.label :email, "メールアドレス" %><br />
-          <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"test" %>
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"test_main" %>
         </div>
 
-        <div class="field">
+        <div class="field_main">
           <%= f.label :password, "パスワード（6文字以上）" %><br />
-          <%= f.password_field :password, autocomplete: "current-password", class:"test" %>
+          <%= f.password_field :password, autocomplete: "current-password", class:"test_main" %>
         </div>
 
-        <div class="actions">
+        <div class="actions_one">
           <%= f.submit "ログイン", class: :form__btn  %>
         </div>
+
       <% end %>
     </div>
   </div>

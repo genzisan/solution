@@ -2,13 +2,13 @@
 <div class="show-main_wrapper">
   <div class="inner">
     <div class="form__wrapper2">
-      <h1 class="page-heading">ユーザー新規登録</h1>
+      <%# <h1 class="page-heading">ユーザー新規登録</h1> %>
 
-        <%# 「モデル名」にはUserモデルであれば@userを渡しましょう。%>
-        <%# 「新規登録機能へのパス」は、devise導入後にrails routesを実行してdevise/registrations#createへのパスを確認し、記載してください。 %>
         <%= form_with model: @user, url: user_registration_path, class: :form_login, local: true do |f| %>
 
-        <div class="field">
+         <%= render 'shared/error_messages', model: f.object%>
+
+        <div class="field_second">
           <%= f.label :email, "メールアドレス" %><br />
           <%= f.email_field :email, autofocus: true, autocomplete: "email", class:"test" %>
         </div>
@@ -32,14 +32,11 @@
           <%= f.label :gender_id, "性別" %><br />
           <%= f.collection_select(:gender_id, Gender.all, :id, :name, {}, {class:"select-box", id:"user-gender"}) %>
         </div>
-
-        
+     
         <div class="field">
           <%= f.label :profile, "プロフィール" %><br />
           <%= f.text_area :profile, class: :form__text, class: :profile_box %>
         </div>
-
-        
 
         <div class="actions">
           <%= f.submit "新規登録", class: :form__btn  %>

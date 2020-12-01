@@ -6,6 +6,7 @@
             <h1 class="user-show-heading">
             <%= "#{@user.nickname}さんの情報"%>
             </h1>
+
           <div class="table-boss">
             <table class="table">
               <tbody>
@@ -13,7 +14,6 @@
                   <th class="table__col1">名前</th>
                   <td class="table__col2"><%= "#{@user.nickname}" %></td>
                 </tr>
-                
                 </tr>
                   <th class="table__col1">性別</th>
                   <td class="table__col2"><%= "#{@user.gender.name}" %></td>
@@ -26,23 +26,27 @@
             </table>
           </div>
       </div>
-      <div class="user-third-wrapper">    
+      <div class="user-third-wrapper">
+      
+      <%= image_tag("IMG_4291.jpg", class:"btn3", size: '400x200') %> 
+      
       </div>
     </div>
 
-    <div class="user-show-text">
-        <%= "ーー　#{@user.nickname}さんの質問or相談　ーー"%>
-    </div>
+    
 
     <div class="user-fourth-wrapper">
-      <ul class="tweet_lists">
-        <% @tweets.each do |text| %>
-          <li class="tweet_list">
-            <%= link_to text.text, tweet_path(text.id), class: :tweet_letter %>
-            <%= link_to "ユーザー名[#{text.user.nickname}]　 カテゴリー[#{text.category.name}]", "#", class: :tweet_user %> 
-          </li>
-        <% end %>
-      </ul>
+        <div class="user-show-text">
+            <%= "ーー　#{@user.nickname}さんの質問or相談　ーー"%>
+        </div>
+        <ul class="tweet_lists_show">
+          <% @tweets.each do |text| %>
+            <li class="tweet_list">
+              <%= link_to text.text, tweet_path(text.id), class: :tweet_letter %>
+              <%= link_to "ユーザー名[#{text.user.nickname}]　 カテゴリー[#{text.category.name}]", "#", class: :tweet_user %> 
+            </li>
+          <% end %>
+        </ul>
     </div>
 
   </div>
