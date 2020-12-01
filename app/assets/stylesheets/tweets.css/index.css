@@ -22,13 +22,13 @@
   height: 4vh;
 }
 
-.btn1 {
+.btn_one {
   display: block;
   border-radius: 12px;
   box-shadow: 15px 10px 15px -10px gray;
 }
 
-.btn2 {
+.btn_two {
   display: block;
   border-radius: 12px;
   background-color: white;
