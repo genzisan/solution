@@ -14,7 +14,7 @@
   padding-top: 92px;
 }
 
-.text_bord {
+.text-box {
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -79,6 +79,7 @@
   text-decoration: none;
   color: black;
 }
+
 .tweet_letter:hover{
   opacity: 0.8;
   color: blue;

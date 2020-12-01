@@ -13,7 +13,7 @@
     
     </div>
 
-    <div class="text_bord">
+    <div class="text-box">
       <div class="btn_two">恋愛</div>
       <div class="btn_two">健康</div>
       <div class="btn_two">人間関係</div>
@@ -21,14 +21,14 @@
     </div>
     
     <div class="post-main">
-    <h1 class="post-title">ーー　新　着　投　稿　一　覧　ーー</h1>
+    <h1 class="post-title">ーー新着投稿一覧ーー</h1>
     </div>
     
       <ul class="tweet_lists">
         <% @tweets.each do |text| %>
           <li class="tweet_list">
             <%= link_to text.text, tweet_path(text.id), class: :tweet_letter %>
-            <%= link_to "ユーザー名[#{text.user.nickname}]　 カテゴリー[#{text.category.name}]", "#", class: :tweet_user %> 
+            <%= link_to "ユーザー名[#{text.user.nickname}] カテゴリー[#{text.category.name}]", "#", class: :tweet_user %> 
           </li>
         <% end %>
       </ul>  

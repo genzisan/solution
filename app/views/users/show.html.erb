@@ -37,13 +37,13 @@
 
     <div class="user-fourth-wrapper">
         <div class="user-show-text">
-            <%= "ーー　#{@user.nickname}さんの質問or相談　ーー"%>
+            <%= "ーー#{@user.nickname}さんの質問or相談ーー"%>
         </div>
         <ul class="tweet_lists_show">
           <% @tweets.each do |text| %>
             <li class="tweet_list">
               <%= link_to text.text, tweet_path(text.id), class: :tweet_letter %>
-              <%= link_to "ユーザー名[#{text.user.nickname}]　 カテゴリー[#{text.category.name}]", "#", class: :tweet_user %> 
+              <%= link_to "ユーザー名[#{text.user.nickname}] カテゴリー[#{text.category.name}]", "#", class: :tweet_user %> 
             </li>
           <% end %>
         </ul>

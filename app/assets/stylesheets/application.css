@@ -16,441 +16,442 @@
 
  /* リセットCSS */
  
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-
-table {
-	border-collapse: collapse;
-  border-spacing: 0;
-  
-}
-
-
-
-/* ヘッダー */
-
-.header {
-  background-color: #f1f8fe;
-  padding: 10px 0;
-  width: 100%;
-  position: fixed;
-}
-
-.inner {
-  width:100%;
-  margin: 0 auto;
-}
-
-.nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  
-}
-.logo {
-  width: 250px;
-  height: 70px;
-}
-.nav__btn{
-  display: inline-block;
-  padding: 10px ;
-  font-size: 20px;
-  color: #87CEFA;
-  text-decoration: none;
-  user-select: none;
-  border: 2px #87CEFA solid;
-  border-radius: 5px;
-  transition: 0.4s ease;
-  margin-left: 10px;
-}
-.nav__btn:hover {
-  color: #fff;
-  background: #87CEFA;
-}
-.user-nickname {
-  text-decoration: none;
-  color: black;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-/* フッター */
-
-.footer {
-  background-color: #999;
-  width: 100%;
-}
-.copyright {
-  text-align: center;
-  color: #fff;
-  font-size: 1.2vw;
-  padding: 1.5vh 0 ;
-}
-
-/* アプリケーションファイル */
-
-.wrapper {
-  width: 100%;
-  position: relative;
-  
-}
-
-
-/* 共通必須 */
-.new-mendatory {
-  background: #ea352d;
-  margin-left: 0.6vw;
-  padding: 0.6vh;
-  border-radius: 6px;
-  color: #fff;
-  font-size: 2vw;
-  font-weight: bold;
-}
-
-/* フォーム周り */
-.form__wrapper{
-  padding-top: 92px;
-  height: calc(100vh - 126px);
-  text-align: center;
-}
-
-.form__text {
-  width: 50%;
-  margin-top: 10px;
-  padding: 1px;
-}
-
-.show-field{
-  margin-bottom: 20px;
-}
-
-.actions{
-  margin-bottom: 40px;
-}
-
-.form__btn{
-  display: inline-block;
-  padding: 10px 1.6em;
-  font-size: 20px;
-  color: #fff;
-  text-decoration: none;
-  user-select: none;
-  background: #87CEFA;
-  border: 1px #87CEFA solid;
-  border-radius: 3px;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
-  transition: 0.2s ease;
-}
-
-.form__btn:hover {
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-}
-
-
-.test {
-  padding: 6px;
-  margin-top: 5px;
-  font-size: 20px;
-}
-
-.select-box {
-  padding: 10px;
-  margin-top: 5px;
-  font-size: 20px;
-}
-
-.form_wrapper {
-  min-height: 65vh;
-}
-
-/* ログイン関連 */
-
-.page-heading {
-  font-size: 30px;
-  margin: 40px 0;
-  font-weight: bold;
-}
-
-.profile_box {
-  margin-top: 6px;
-  font-size: 20px;
-  width: 70%;
-}
-
-.error-alert {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5vh;
-}
-
-.error-message {
-  font-size: 1.3vw;
-  list-style: circle;
-  color: rgb(182, 48, 0);
-}
-
-.field_main {
-  font-size: 25px;
-  padding: 20px;
-}
-
-.test_main {
-  padding: 6px;
-  margin-top: 14px;
-  font-size: 20px;
-  border-radius: 6px;
-}
-
-.actions_one {
-  padding-top: 30px;
-}
-
-@media (max-width:599px){
-
-  /* index */
-
-.post-title {
-    font-size: 20px;
-}
-
-.btn_one {
-    display: block;
-    border-radius: 12px;
-    box-shadow: 15px 10px 15px -10px gray;
-    width: 85px;
-    height: 85px;
-}
-
-.tweet_lists {
-    width: 90%;
-    overflow: scroll;
-    font-size: 20px;
-    height: 55vh;
-    margin: 0 auto;
-    padding-left: 20px;
-}
-
-.btn_two {
-  display: block;
-  border-radius: 12px;
-  background-color: white;
-  font-size: 10px;
-  font-weight: bold;
-  width: 15vw;
-  display: grid;
-  place-items: center;
-}
-
-.tweet_list {
-  list-style-type: disc;
-  padding-bottom: 20px;
-  font-weight: 900;
-}
-
-.tweet_letter {
-  text-decoration: none;
-  color: black;
-  font-size: 25px;
-}
-
-.tweet_letter:hover{
-  opacity: 0.8;
-  color: blue;
-}
-
-/* ヘッダー */
-
-.header {
-  background-color: #f1f8fe;
-  padding: 10px 0;
-  width: 100%;
-  position: fixed;
-
-}
-
-.logo {
-  width: 120px;
-  height: 50px;
-}
-.nav__btn{
-  display: inline-block;
-  padding: 5px;
-  font-size: 12px;
-  color: #87CEFA;
-  text-decoration: none;
-  user-select: none;
-  border: 2px #87CEFA solid;
-  border-radius: 5px;
-  transition: 0.4s ease;
-  margin-left: 10px;
-}
-
-.user-nickname {
-  text-decoration: none;
-  color: black;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-.tweet_user {
-  cursor: pointer;
-  text-decoration: none;
-  display: block;
-  font-size: 15px;
-  height: 30px;
-  padding-top: 20px;
-  color: black;
-}
-
-.sell-btn {
-  background: #ea352d;
-  color: #fff;
-  width: 80px;
-  height: 50px;
-  font-size: 20px;
-  margin-top: 20px;
-  border-radius: 5px;
-}
-
-.prototype__btn {
-  display: block;
-  padding: 6px;
-  font-size: 20px;
-  color: #999;
-  text-decoration: none;
-  user-select: none;
-  border: 3px solid #999;
-  border-radius: 3px;
-  transition: 0.4s ease;
-  margin: 0 10px;
-}
-
-.prototype_btn_second {
-  display: block;
-  padding: 6px;
-  font-size: 20px;
-  color: #999;
-  text-decoration: none;
-  user-select: none;
-  border: 3px #999 solid;
-  border-radius: 3px;
-  transition: 0.4s ease;
-  margin: 0 10px;
-}
-
-.show-main_wrapper {
-  min-height: calc(100vh - 122.5px);
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 92px;
-}
-
-.show-text {
-  padding: 50px 0;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.edit-main_wrapper {
-  padding-top: 92px;
-  min-height:100vh;
-  width: 80%;
-  margin: 0 auto;
-  overflow: scroll;
-}
-
-/* user show */
-
-.user-show-text {
-  font-size: 20px;
-  font-weight: bold;
-  padding: 30px 0 20px 0 ;
-  text-align: center;
-}
-  
-.user-show-heading {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-}
-
-.user-main-second-wrapper {
-  display: flex;
-}
-
-.tweet_lists_show {
-    width: 80%;
-    overflow: scroll;
-    font-size: 25px;
-    height: 80%;
-    margin: 0 auto;
-    padding-left: 30px;
-}
-
-.user-second-wrapper {
-  width: 50%;
-  height: 290px;
-  background-color: rgb(226, 248, 255);
-  text-align: center;  
-}
-
-.user-third-wrapper {
-  width: 50%;
-  height: 290px;
-  text-align: center;
-  background-color: rgb(224, 248, 224);
-  justify-content: center;
-  }
-
-.btn3 {
-    display: block;
-    border-radius: 12px;
-    box-shadow: 15px 10px 15px -10px gray;
-    width: 100px;
-    height: 100px;
-    margin-left: 14%;
-    margin-top: 20px;
-}
-
-
-}
-
+ html, body, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ b, u, i, center,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ article, aside, canvas, details, embed, 
+ figure, figcaption, footer, header, hgroup, 
+ menu, nav, output, ruby, section, summary,
+ time, mark, audio, video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+ }
+ /* HTML5 display-role reset for older browsers */
+ article, aside, details, figcaption, figure, 
+ footer, header, hgroup, menu, nav, section {
+   display: block;
+ }
+ body {
+   line-height: 1;
+ }
+ ol, ul {
+   list-style: none;
+ }
+ blockquote, q {
+   quotes: none;
+ }
+ blockquote:before, blockquote:after,
+ q:before, q:after {
+   content: '';
+   content: none;
+ }
+ 
+ table {
+   border-collapse: collapse;
+   border-spacing: 0;
+   
+ }
+ 
+ 
+ 
+ /* ヘッダー */
+ 
+ .header {
+   background-color: #f1f8fe;
+   padding: 10px 0;
+   width: 100%;
+   position: fixed;
+ }
+ 
+ .inner {
+   width:100%;
+   margin: 0 auto;
+ }
+ 
+ .nav {
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   
+ }
+ .logo {
+   width: 250px;
+   height: 70px;
+ }
+ .nav__btn{
+   display: inline-block;
+   padding: 10px ;
+   font-size: 20px;
+   color: #87CEFA;
+   text-decoration: none;
+   user-select: none;
+   border: 2px #87CEFA solid;
+   border-radius: 5px;
+   transition: 0.4s ease;
+   margin-left: 10px;
+ }
+ .nav__btn:hover {
+   color: #fff;
+   background: #87CEFA;
+ }
+ .user-nickname {
+   text-decoration: none;
+   color: black;
+   font-size: 20px;
+   font-weight: bold;
+ }
+ 
+ /* フッター */
+ 
+ .footer {
+   background-color: #999;
+   width: 100%;
+ }
+ .copyright {
+   text-align: center;
+   color: #fff;
+   font-size: 1.2vw;
+   padding: 1.5vh 0 ;
+ }
+ 
+ /* アプリケーションファイル */
+ 
+ .wrapper {
+   width: 100%;
+   position: relative;
+   
+ }
+ 
+ 
+ /* 共通必須 */
+ .new-mendatory {
+   background: #ea352d;
+   margin-left: 0.6vw;
+   padding: 0.6vh;
+   border-radius: 6px;
+   color: #fff;
+   font-size: 2vw;
+   font-weight: bold;
+ }
+ 
+ /* フォーム周り */
+ .form__wrapper{
+   padding-top: 92px;
+   height: calc(100vh - 126px);
+   text-align: center;
+ }
+ 
+ .form__text {
+   width: 50%;
+   margin-top: 10px;
+   padding: 1px;
+ }
+ 
+ .show-field{
+   margin-bottom: 20px;
+ }
+ 
+ .actions{
+   margin-bottom: 40px;
+ }
+ 
+ .form__btn{
+   display: inline-block;
+   padding: 10px 1.6em;
+   font-size: 20px;
+   color: #fff;
+   text-decoration: none;
+   user-select: none;
+   background: #87CEFA;
+   border: 1px #87CEFA solid;
+   border-radius: 3px;
+   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
+   transition: 0.2s ease;
+ }
+ 
+ .form__btn:hover {
+   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+   cursor: pointer;
+ }
+ 
+ 
+ .test {
+   padding: 6px;
+   margin-top: 5px;
+   font-size: 20px;
+ }
+ 
+ .select-box {
+   padding: 10px;
+   margin-top: 5px;
+   font-size: 20px;
+ }
+ 
+ .form_wrapper {
+   min-height: 65vh;
+ }
+ 
+ /* ログイン関連 */
+ 
+ .page-heading {
+   font-size: 30px;
+   margin: 40px 0;
+   font-weight: bold;
+ }
+ 
+ .profile_box {
+   margin-top: 6px;
+   font-size: 20px;
+   width: 70%;
+ }
+ 
+ .error-alert {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 5vh;
+ }
+ 
+ .error-message {
+   font-size: 1.3vw;
+   list-style: circle;
+   color: rgb(182, 48, 0);
+ }
+ 
+ .field_main {
+   font-size: 25px;
+   padding: 20px;
+ }
+ 
+ .test_main {
+   padding: 6px;
+   margin-top: 14px;
+   font-size: 20px;
+   border-radius: 6px;
+ }
+ 
+ .actions_one {
+   padding-top: 30px;
+ }
+ 
+ @media (max-width:599px){
+ 
+   /* index */
+ 
+ .post-title {
+     font-size: 20px;
+ }
+ 
+ .btn_one {
+     display: block;
+     border-radius: 12px;
+     box-shadow: 15px 10px 15px -10px gray;
+     width: 85px;
+     height: 85px;
+ }
+ 
+ .tweet_lists {
+     width: 90%;
+     overflow: scroll;
+     font-size: 20px;
+     height: 55vh;
+     margin: 0 auto;
+     padding-left: 20px;
+ }
+ 
+ .btn_two {
+   display: block;
+   border-radius: 12px;
+   background-color: white;
+   font-size: 10px;
+   font-weight: bold;
+   width: 15vw;
+   display: grid;
+   place-items: center;
+ }
+ 
+ .tweet_list {
+   list-style-type: disc;
+   padding-bottom: 20px;
+   font-weight: 900;
+ }
+ 
+ .tweet_letter {
+   text-decoration: none;
+   color: black;
+   font-size: 25px;
+ }
+ 
+ .tweet_letter:hover{
+   opacity: 0.8;
+   color: blue;
+ }
+ 
+ /* ヘッダー */
+ 
+ .header {
+   background-color: #f1f8fe;
+   padding: 10px 0;
+   width: 100%;
+   position: fixed;
+ 
+ }
+ 
+ .logo {
+   width: 120px;
+   height: 50px;
+ }
+ .nav__btn{
+   display: inline-block;
+   padding: 5px;
+   font-size: 12px;
+   color: #87CEFA;
+   text-decoration: none;
+   user-select: none;
+   border: 2px #87CEFA solid;
+   border-radius: 5px;
+   transition: 0.4s ease;
+   margin-left: 10px;
+ }
+ 
+ .user-nickname {
+   text-decoration: none;
+   color: black;
+   font-size: 12px;
+   font-weight: bold;
+ }
+ 
+ .tweet_user {
+   cursor: pointer;
+   text-decoration: none;
+   display: block;
+   font-size: 15px;
+   height: 30px;
+   padding-top: 20px;
+   color: black;
+ }
+ 
+ .sell-btn {
+   background: #ea352d;
+   color: #fff;
+   width: 80px;
+   height: 50px;
+   font-size: 20px;
+   margin-top: 20px;
+   border-radius: 5px;
+ }
+ 
+ .prototype__btn {
+   display: block;
+   padding: 6px;
+   font-size: 20px;
+   color: #999;
+   text-decoration: none;
+   user-select: none;
+   border: 3px solid #999;
+   border-radius: 3px;
+   transition: 0.4s ease;
+   margin: 0 10px;
+ }
+ 
+ .prototype_btn_second {
+   display: block;
+   padding: 6px;
+   font-size: 20px;
+   color: #999;
+   text-decoration: none;
+   user-select: none;
+   border: 3px #999 solid;
+   border-radius: 3px;
+   transition: 0.4s ease;
+   margin: 0 10px;
+ }
+ 
+ .show-main_wrapper {
+   min-height: calc(100vh - 122.5px);
+   width: 80%;
+   margin: 0 auto;
+   padding-top: 92px;
+ }
+ 
+ .show-text {
+   padding: 50px 0;
+   font-size: 20px;
+   font-weight: bold;
+ }
+ 
+ .edit-main_wrapper {
+   padding-top: 92px;
+   min-height:100vh;
+   width: 80%;
+   margin: 0 auto;
+   overflow: scroll;
+ }
+ 
+ /* user show */
+ 
+ .user-show-text {
+   font-size: 20px;
+   font-weight: bold;
+   padding: 30px 0 20px 0 ;
+   text-align: center;
+ }
+   
+ .user-show-heading {
+   font-size: 20px;
+   font-weight: bold;
+   text-align: center;
+ }
+ 
+ .user-main-second-wrapper {
+   display: flex;
+ }
+ 
+ .tweet_lists_show {
+     width: 80%;
+     overflow: scroll;
+     font-size: 25px;
+     height: 80%;
+     margin: 0 auto;
+     padding-left: 30px;
+ }
+ 
+ .user-second-wrapper {
+   width: 50%;
+   height: 290px;
+   background-color: rgb(226, 248, 255);
+   text-align: center;  
+ }
+ 
+ .user-third-wrapper {
+   width: 50%;
+   height: 290px;
+   text-align: center;
+   background-color: rgb(224, 248, 224);
+   justify-content: center;
+   }
+ 
+ .btn3 {
+     display: block;
+     border-radius: 12px;
+     box-shadow: 15px 10px 15px -10px gray;
+     width: 100px;
+     height: 100px;
+     margin-left: 14%;
+     margin-top: 20px;
+ }
+ 
+ 
+ }
+ 
+ 
