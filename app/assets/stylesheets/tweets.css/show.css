@@ -68,7 +68,6 @@
 .prototype__btn:hover{
   color: #fff;
   background: red;
-  border: 3px red solid;
 }
 
 .prototype_btn_second {
@@ -86,7 +85,6 @@
 .prototype_btn_second:hover{
   color: #fff;
   background:#87CEFA;
-  border: 3px #87CEFA solid;
 }
 
 

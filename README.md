@@ -2,7 +2,7 @@
 
 ## users テーブル
 
-| column　           | Type  | Options      |
+| column             | Type  | Options      |
 | -------------------|--------|-------------|
 | nickname           | string | null: false |
 | email              | string | null: false |

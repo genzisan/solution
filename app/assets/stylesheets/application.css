@@ -71,8 +71,8 @@ table {
   padding: 10px 0;
   width: 100%;
   position: fixed;
-
 }
+
 .inner {
   width:100%;
   margin: 0 auto;
@@ -101,21 +101,16 @@ table {
   transition: 0.4s ease;
   margin-left: 10px;
 }
-.nav__btn:hover{
+.nav__btn:hover {
   color: #fff;
   background: #87CEFA;
 }
-
-
-
 .user-nickname {
   text-decoration: none;
   color: black;
   font-size: 20px;
   font-weight: bold;
 }
-
-
 
 /* フッター */
 
@@ -257,7 +252,7 @@ table {
     font-size: 20px;
   }
 
-  .btn1 {
+  .btn_one {
     display: block;
     border-radius: 12px;
     box-shadow: 15px 10px 15px -10px gray;
@@ -274,7 +269,7 @@ table {
     padding-left: 20px;
     }
 
-.btn2 {
+.btn_two {
   display: block;
   border-radius: 12px;
   background-color: white;
@@ -318,7 +313,7 @@ table {
 }
 .nav__btn{
   display: inline-block;
-  padding: 5px ;
+  padding: 5px;
   font-size: 12px;
   color: #87CEFA;
   text-decoration: none;
@@ -347,6 +342,7 @@ table {
 }
 
 .sell-btn {
+  background: #ea352d;
   color: #fff;
   width: 80px;
   height: 50px;
@@ -356,14 +352,14 @@ table {
   cursor: pointer;
 }
 
-.prototype__btn{
+.prototype__btn {
   display: block;
   padding: 6px;
   font-size: 20px;
   color: #999;
   text-decoration: none;
   user-select: none;
-  border: 3px #999 solid;
+  border: 3px solid #999;
   border-radius: 3px;
   transition: 0.4s ease;
   margin: 0 10px;
@@ -416,6 +412,7 @@ table {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
+}
 
 .user-main-second-wrapper {
   display: flex;
@@ -434,8 +431,7 @@ table {
   width: 50%;
   height: 290px;
   background-color: rgb(226, 248, 255);
-  text-align: center;
-  
+  text-align: center;  
 }
 
 .user-third-wrapper {
