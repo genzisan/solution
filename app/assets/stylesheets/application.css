@@ -475,6 +475,21 @@
   border-radius: 12px;
 }
 
+.question-text {
+  font-weight: bold;
+  font-size: 20px;
+  padding: 2vh;
+}
+
+.new-logo {
+  padding: 2vh;
+}
+
+.new_logo_image {
+  width: 30vw;
+  height: 10vh;
+}
+
  }
  
  
