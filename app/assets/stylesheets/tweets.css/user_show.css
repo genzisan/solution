@@ -1,0 +1,105 @@
+/* user-show */
+
+.user-main-wrapper {
+  width: 100%;
+  overflow: scroll;
+  min-height: 100vh - 92px;
+  background-color: rgb(250, 235, 237);
+}
+
+.user-main-second-wrapper {
+  display: flex;
+}
+
+.user-second-wrapper {
+  width: 50%;
+  height: 290px;
+  background-color: rgb(226, 248, 255);
+  text-align: center;
+  
+}
+
+.user-third-wrapper {
+  width: 50%;
+  height: 290px;
+  text-align: center;
+  background-color: rgb(224, 248, 224);
+  justify-content: center;
+  
+  }
+
+  .table-boss {
+   width: 70%;
+   margin: 0 15%;
+   height: 70%;
+   overflow: scroll;
+  }
+  
+.user-show-heading {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 40px 0 20px 0;
+  text-align: center;
+}
+
+.user-show-text {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 30px 0 20px 0 ;
+  text-align: center;
+}
+
+.user-fourth-wrapper {
+  background-color: rgb(250, 235, 237);
+  height:calc(100vh - 290px);
+}
+
+.table{
+  border-collapse: collapse;
+  margin-bottom: 32px;
+  font-size: 20px;
+}
+.table__col1{
+  text-align: left;
+  font-weight: bold;
+  background: #fafafa;
+  border-collapse: collapse;
+  border: 2px solid black;
+  width: 30%;
+  padding: 8px;
+}
+.table__col2{
+  text-align: left;
+  border: 2px solid black;
+  border-collapse: collapse;
+  width: 70%;
+  padding: 16px 8px;
+  overflow: scroll;
+  background: #fafafa;
+}
+
+.usermain-wrapper {
+  padding-top: 72px;
+  height: 100vh;
+}
+
+.tweet_lists_show {
+    width: 90%;
+    overflow: scroll;
+    font-size: 35px;
+    height: 80%;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+.btn3 {
+    display: block;
+    border-radius: 12px;
+    box-shadow: 15px 10px 15px -10px gray;
+    width: 75%;
+    height: 220px;
+    margin-left: 14%;
+    margin-top: 45px;
+  }
+
+  

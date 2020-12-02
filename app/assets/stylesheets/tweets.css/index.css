@@ -1,0 +1,86 @@
+/* index */
+
+.index-wrapper {
+  background-color: rgb(250, 235, 237);
+  height: 100vh;
+  padding-top: 50px;
+  overflow: scroll;
+}
+
+.index-second-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 92px;
+}
+
+.text-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2vh;
+  height: 4vh;
+}
+
+.btn_one {
+  display: block;
+  border-radius: 12px;
+  box-shadow: 15px 10px 15px -10px gray;
+}
+
+.btn_two {
+  display: block;
+  border-radius: 12px;
+  background-color: white;
+  font-size: 2vw;
+  font-weight: bold;
+  width: 10vw;
+  display: grid;
+  place-items: center;
+}
+
+.post-main {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(250, 4, 4);
+  margin: 50px 0;
+}
+
+.post-title {
+  font-size: 50px;
+}
+
+.tweet_user {
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+  height: 30px;
+  padding-top: 20px;
+  color: black;
+}
+
+.tweet_lists {
+  width: 90%;
+  overflow: scroll;
+  font-size: 35px;
+  height: 45vh;
+  margin: 0 auto;
+  padding-left: 40px;
+  }
+
+.tweet_list {
+  list-style-type: disc;
+  padding-bottom: 20px;
+  font-weight: 900;
+}
+
+.tweet_letter {
+  text-decoration: none;
+  color: black;
+}
+
+.tweet_letter:hover{
+  opacity: 0.8;
+  color: blue;
+}
