@@ -3,7 +3,7 @@
 .user-main-wrapper {
   width: 100%;
   overflow: scroll;
-  min-height: 100vh - 92px;
+  min-height: calc(100vh - 92px);
   background-color: rgb(250, 235, 237);
 }
 
