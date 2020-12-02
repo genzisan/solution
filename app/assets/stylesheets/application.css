@@ -63,7 +63,6 @@
  }
  
  
- 
  /* ヘッダー */
  
  .header {
@@ -272,7 +271,6 @@
  .btn_two {
    display: block;
    border-radius: 12px;
-   background-color: white;
    font-size: 10px;
    font-weight: bold;
    width: 15vw;
