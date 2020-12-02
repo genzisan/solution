@@ -448,8 +448,33 @@
      margin-left: 14%;
      margin-top: 20px;
  }
- 
- 
+
+ .btn3 {
+  display: block;
+  border-radius: 12px;
+  box-shadow: 15px 10px 15px -10px gray;
+  width: 75%;
+  height: 200px;
+  margin-left: 14%;
+  margin-top: 45px;
+}
+
+.table-boss {
+  width: 70%;
+  margin: 0 15%;
+  height: 60%;
+  overflow: scroll;
+ }
+
+ .back-btn {
+  background: #aaa;
+  border: 1px solid #aaa;
+  color: #fff;
+  padding: 15px 5%;
+  text-decoration: none;
+  border-radius: 12px;
+}
+
  }
  
  
