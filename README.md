@@ -30,15 +30,13 @@
 
 ## comments テーブル
 
-| column　   | Type     | Options             |
+| column   | Type     | Options             |
 | ----------|-----------|--------------------|
 | text      | text       | null: false       |
 | user      | references | foreign_key: true |
-| tweets    | references | foreign_key: true |　　　
+| tweets    | references | foreign_key: true |
 
 ### Association
 
 - belongs_to :tweet
 - belongs_to :user
-
-test
